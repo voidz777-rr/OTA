@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+<Stable>
+<kltedcm>
+<Filename>RR-O-v6.0.0-20180330-kltedcm-Unofficial.zip</Filename>
+<LatestBuildUrl
+  id="latestbuild"
+  title="Latest Build"
+  description="Download Latest Build">https://www.androidfilehost.com/?fid=890129502657595086</LatestBuildUrl>
+<BuildUrl
+  id="build"
+  title="Build"
+  description="Download a Build">https://androidfilehost.com/user/?w=settings-dev-files&flid=256900</BuildUrl>
+<ChangelogUrl
+  id="changelog"
+  title="Changelog"
+  description="View Changelogs">https://raw.githubusercontent.com/voidz777-rr/OTA/master/voidz777/Changelog.txt</ChangelogUrl>
+</kltedcm>
+</Stable>
+</SlimOTA>
+    
