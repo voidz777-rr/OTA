@@ -3,79 +3,81 @@
 
 
 ====================
-     05-27-2018
-====================
-
-
-   * packages/apps/Settings/
-09d0825 Merge pull request #963 from itsHardStyl3r/oreo
-
-====================
-     05-26-2018
+     06-03-2018
 ====================
 
 
    * frameworks/base/
-
-   * packages/apps/Settings/
-
-====================
-     05-25-2018
-====================
-
-
-====================
-     05-24-2018
-====================
-
-
-   * hardware/lineage/lineagehw/
-76982bf lineagehw: Introduce Reader mode backend
-
-====================
-     05-23-2018
-====================
-
-
-====================
-     05-22-2018
-====================
-
-
-====================
-     05-21-2018
-====================
-
-
-   * frameworks/base/
-528873d Merge pull request #229 from shahan-mik3/oreo
-
-   * hardware/qcom/audio-caf/msm8952/
-61ebd0f Merge remote-tracking branch 'caf/LA.BR.1.3.7_rb1.11' into lineage-15.1-caf-8952
-
-   * hardware/qcom/media-caf/msm8952/
-892df5c Merge remote-tracking branch 'caf/LA.BR.1.3.7_rb1.11' into lineage-15.1-caf-8952
+97f512f Keyguard: Fix Turkish translation
 
    * lineage-sdk/
-11efd13 Merge pull request #1 from shahan-mik3/oreo
 
-   * packages/apps/Recorder/
-5191f7d Recorder: update assets to use rounded style
-a1220a7 Recorder: support down to api24
+   * packages/apps/DUI/
+
+   * packages/apps/LineageParts/
+
+   * packages/apps/ResurrectionOTA/
 
    * packages/apps/Settings/
-2335144 Merge pull request #961 from shahan-mik3/oreo
+589d488 Merge pull request #968 from TTTT555/oreo
+4d93838 Added Nubia Z9 mini  Maintainer https://github.com/TTTT555/android_device_nubia_nx511j/tree/rr-o https://github.com/TTTT555/android_kernel_nubia_nx511j https://github.com/TTTT555/android_vendor_nubia_nx511j ROM: https://drive.google.com/file/d/1DxzKFvqCPN63L2jtXL4TgU9xHdj2zIYb https://user-images.githubusercontent.com/34489574/40805819-d4f50a58-651f-11e8-83d5-b52381610da3.png @mracar
+
+   * packages/services/OmniJaws/
 
 ====================
-     05-20-2018
+     06-02-2018
 ====================
 
 
-   * packages/apps/Recorder/
-53a7880 Recorder: update deprecated methods to new ones
-b768a6a Recorder: update aar libs
-b73f5b6 Recorder: update gradle deps
+====================
+     06-01-2018
+====================
+
+
+   * packages/apps/Eleven/
+d378526 Eleven: Catch unsupported bitmap exception
 
    * vendor/lge/
-e560e7b g2-common: Move back acdb files to system/etc/acdbdata in order to prevent hexediting libacdbloader.so with a new path to the acdb files
+2ee0bc1 Add DRM lib from angler
+
+====================
+     05-31-2018
+====================
+
+
+   * frameworks/base/
+
+   * packages/apps/Settings/
+
+   * packages/providers/ContactsProvider/
+44ba9b9 CallLogDatabase: Bump the version and try to re-run the version 5 upgrade path
+
+====================
+     05-30-2018
+====================
+
+
+   * packages/apps/Settings/
+7815df0 Rom about update
+
+====================
+     05-29-2018
+====================
+
+
+   * packages/apps/Settings/
+0cd8ac0 Merge pull request #959 from root2raj/oreo
+
+====================
+     05-28-2018
+====================
+
+   * android/
+cb480ca Add Jelly back (#118)
+
+   * packages/apps/Settings/
+7faf108a Fix ScreenShot Editor APP FC
+b00f05f Merge pull request #965 from LMMFHHO/oreo
+09d0825 Merge pull request #963 from itsHardStyl3r/oreo
+
 
