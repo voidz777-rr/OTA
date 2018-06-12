@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+<Stable>
+<angler>
+<Filename>RR-O-v6.1.0-20180612-angler-Official.zip</Filename>
+<LatestBuildUrl
+  id="latestbuild"
+  title="Latest Build"
+  description="Download Latest Build">http://downloads.resurrectionremix.com/angler/RR-O-v6.1.0-20180612-angler-Official.zip</LatestBuildUrl>
+<BuildUrl
+  id="build"
+  title="Build"
+  description="Download a Build">http://downloads.resurrectionremix.com/angler/</BuildUrl>
+<ChangelogUrl
+  id="changelog"
+  title="Changelog"
+  description="View Changelogs">https://raw.githubusercontent.com/voidz777-rr/OTA/master/voidz777/Changelog.txt</ChangelogUrl>
+</angler>
+</Stable>
+</SlimOTA>
+    
