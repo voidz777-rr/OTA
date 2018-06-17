@@ -3,12 +3,92 @@
 
 
 ====================
-     06-11-2018
+     06-17-2018
+====================
+
+
+   * bootable/recovery/
+7a92646 recovery: Add resize2fs
+
+   * device/qcom/sepolicy/
+4e72121 Merge https://github.com/LineageOS/android_device_qcom_sepolicy into oreo
+
+   * frameworks/base/
+2ffe68a SystemUI: Add Lineage statusbar item holder
+9ea9e0b Sometimes this happens when changing the theme (#234)
+
+   * lineage-sdk/
+ce9185e lineage-sdk: Add LineageStatusBarItem interfaces
+
+   * packages/apps/LineageParts/
+2021bb5 Exclude trust onboarding from recents
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Settings/
+ba69025 Add Samsung A3 2016 (#984)
+22620b4 Kenzo maintainer change
+6052bec Update pt-PT cm_strings
+5e83a70 Fixes in strings/translations
+
+   * vendor/rr/
+81417b0 lineage: qcom: Set thermal & vr HAL pathmaps
+91d783b repopick: Update SSH queries result to match HTTP queries
+
+====================
+     06-16-2018
+====================
+
+
+   * hardware/lineage/interfaces/
+995cd62 livedisplay: Use RAII semantics for ColorBackend initialization
+35484bb livedisplay: Move initialization of mActiveModeId to constructor
+af12c6e livedisplay: Convert controller singletons to regular objects
+21c71ae livedisplay: Move Color::check function to implementation
+cfd7b99 livedisplay: Don't use a singleton for Color service
+d6be15d livedisplay: Fix bogus print
+
+====================
+     06-15-2018
+====================
+
+
+   * hardware/lineage/interfaces/
+8127346 Revert "livedisplay: Don't use singletons for the stack"
+
+   * packages/apps/Nfc/
+45d2faf NFC: Clean duplicated and unknown permissions
+
+====================
+     06-14-2018
+====================
+
+
+====================
+     06-13-2018
+====================
+
+
+   * bootable/recovery/
+afc6454 recovery: Do not load time from /persist
+6ac3bb4 recovery: New install/progress animation
+
+   * device/qcom/sepolicy/
+2d49cb5 common: Fix labelling of lcd-backlight
+
+   * packages/apps/Settings/
+5690ad9 Angler Maintainer Changes (#981)
+
+====================
+     06-12-2018
 ====================
 
    * android/
 6744938 manifest: android-8.1.0_r26 -> android-8.1.0_r30
 c5ead4f manifest: Track own external/libvorbis
+
+   * bionic/
+8e024ad linker: Make shim reference path absolute
 
    * build/make/
 391cf9c build: Add new variable to hold generic build properties
@@ -25,9 +105,6 @@ d7f06cc Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platfo
 
    * frameworks/base/
 c14d0a1 base: introduce trust interface
-
-   * frameworks/native/
-bd40653 Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/native into oreo
 
    * frameworks/opt/telephony/
 ccbfdae Merge tag 'android-8.1.0_r30' into lineage-15.1
@@ -46,6 +123,10 @@ e72903f LineageParts: fix Trust onBoarding completion when clicking
 6ce4474 LineageParts: introduce Trust interface
 
    * packages/apps/Settings/
+1bf4f05 Zuk Maintainer Changes
+8099ba6 Privacy Guard: Add icon for VPN permission
+3c7f254 Privacy Guard: Avoid NPE when tinting permission icons
+a71cbe7 Move BQ phone into the right catagory (#977)
 b91f8b1 Settings: add Trust interface hook
 
    * packages/providers/MediaProvider/
@@ -73,125 +154,13 @@ e64f286 build: Remove maven make rules
 8df42a7 rr: update for v6.1.0
 
 ====================
-     06-10-2018
+     06-11-2018
 ====================
 
 
-   * hardware/lineage/interfaces/
-f66d76e livedisplay: Correct macro copypasta
-
-   * packages/apps/Jelly/
-6432e80 Jelly: Add support for multiple windows
-
-====================
-     06-09-2018
-====================
-
-
-   * packages/apps/Settings/
-f97842b Change oreo device maintainer to me (#976)
-
-====================
-     06-08-2018
-====================
-
-
-   * hardware/lineage/interfaces/
-ac865c8 livedisplay: Remove unused using statements
-412bc94 livedisplay: Move LegacyMMController inclusion to impl
-
-   * lineage-sdk/
-e07772c Revert "lineage-sdk: Switch back to AOSP TwilightService"
-55dc83d Add led capability LIGHTS_ADJUSTABLE_BATTERY_LED_BRIGHTNESS
-
-   * packages/apps/Settings/
-03f5715 Add on7xelte to oficial (#975)
-
-====================
-     06-07-2018
-====================
-
-
-   * frameworks/base/
-0ca7d5a Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/base into oreo
-
-   * packages/apps/Settings/
-5101662 Add Asus Zenfone Max Pro M1 (X00TD) (#974)
-
-====================
-     06-06-2018
-====================
-
-
-   * packages/apps/Settings/
-2dc1d88 Add Redmi 2 Maintainer (#972)
-
-====================
-     06-05-2018
-====================
-
-
-   * device/qcom/sepolicy/
-5f24467 Merge https://github.com/LineageOS/android_device_qcom_sepolicy into oreo
-
-   * device/rr/sepolicy/
-0c9e3c9 Merge https://github.com/LineageOS/android_device_lineage_sepolicy into oreo
-
-   * frameworks/base/
-24ac5bc Update text size of overflow number view
-b5b6906 SystemUI: update heads up, sync and volume panel drawables
-3da2470 SystemUI: Don't append app name to file on lockscreen
-d5288de SystemUI: Enable dualTarget on CellularTile
-6deca18 Make it possible to hide signal strength via Carrier Config
-6d634da SystemUI: add navbar button layout inversion tuning
+   * bionic/
+7bc47fc linker: Remove unused find_libraries declaration
 
    * frameworks/native/
-9dc672b Merge https://github.com/LineageOS/android_frameworks_native into oreo
-
-   * lineage-sdk/
-dd6f451 lineage-sdk: Add backend for reading enhancement
-a6666e1 lineage-sdk: Switch back to AOSP TwilightService
-
-   * packages/apps/Dialer/
-dada2e7 Merge https://github.com/LineageOS/android_packages_apps_Dialer into oreo
-
-   * packages/apps/LineageParts/
-fbf21d0 LiveDisplay: Set Reading Mode switch preference as non-persistent
-aeeb69a LineageParts: Add Reader mode frontend
-bcb540b LineageParts: make volume button re-orient functionality act based on relevant input
-
-   * packages/apps/Settings/
-15af046 Merge pull request #973 from Astridxx/patch-1
-d7d2900 Update Turkish translation
-
-   * packages/apps/Snap/
-5438ac6 SnapdragonCamera: Panorama, replace border drawable
-a5d7aea Snap: remove unused shutter buttons
-
-   * packages/services/Telecomm/
-8f6294a Merge https://github.com/LineageOS/android_packages_services_Telecomm into oreo
-
-   * system/core/
-b058bb9 Merge https://github.com/LineageOS/android_system_core into oreo
-
-   * vendor/rr/
-52cb504 Fix RR properties for splitted vendor devices (#113)
-eb598d6 lineage: qcom: Enable TARGET_USES_COLOR_METADATA for msm8937 & msm8953
-730343c apns: Add UPC Mobile
-184986f verity: Implement verity tool
-
-====================
-     06-04-2018
-====================
-
-
-   * packages/apps/Dialer/
-
-   * packages/apps/FMRadio/
-
-   * packages/apps/Jelly/
-
-   * packages/apps/Recorder/
-
-   * packages/apps/Snap/
+bd40653 Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/native into oreo
 
