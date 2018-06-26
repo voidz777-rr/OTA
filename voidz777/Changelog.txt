@@ -3,164 +3,122 @@
 
 
 ====================
-     06-17-2018
+     06-26-2018
 ====================
 
 
-   * bootable/recovery/
-7a92646 recovery: Add resize2fs
-
-   * device/qcom/sepolicy/
-4e72121 Merge https://github.com/LineageOS/android_device_qcom_sepolicy into oreo
-
-   * frameworks/base/
-2ffe68a SystemUI: Add Lineage statusbar item holder
-9ea9e0b Sometimes this happens when changing the theme (#234)
-
-   * lineage-sdk/
-ce9185e lineage-sdk: Add LineageStatusBarItem interfaces
-
-   * packages/apps/LineageParts/
-2021bb5 Exclude trust onboarding from recents
-
-   * packages/apps/ResurrectionOTA/
-
-   * packages/apps/Settings/
-ba69025 Add Samsung A3 2016 (#984)
-22620b4 Kenzo maintainer change
-6052bec Update pt-PT cm_strings
-5e83a70 Fixes in strings/translations
-
-   * vendor/rr/
-81417b0 lineage: qcom: Set thermal & vr HAL pathmaps
-91d783b repopick: Update SSH queries result to match HTTP queries
+   * frameworks/opt/telephony/
+a448840 Revert "Don't assume 3GPP as active app on CDMA with LTE device"
 
 ====================
-     06-16-2018
-====================
-
-
-   * hardware/lineage/interfaces/
-995cd62 livedisplay: Use RAII semantics for ColorBackend initialization
-35484bb livedisplay: Move initialization of mActiveModeId to constructor
-af12c6e livedisplay: Convert controller singletons to regular objects
-21c71ae livedisplay: Move Color::check function to implementation
-cfd7b99 livedisplay: Don't use a singleton for Color service
-d6be15d livedisplay: Fix bogus print
-
-====================
-     06-15-2018
-====================
-
-
-   * hardware/lineage/interfaces/
-8127346 Revert "livedisplay: Don't use singletons for the stack"
-
-   * packages/apps/Nfc/
-45d2faf NFC: Clean duplicated and unknown permissions
-
-====================
-     06-14-2018
-====================
-
-
-====================
-     06-13-2018
-====================
-
-
-   * bootable/recovery/
-afc6454 recovery: Do not load time from /persist
-6ac3bb4 recovery: New install/progress animation
-
-   * device/qcom/sepolicy/
-2d49cb5 common: Fix labelling of lcd-backlight
-
-   * packages/apps/Settings/
-5690ad9 Angler Maintainer Changes (#981)
-
-====================
-     06-12-2018
+     06-25-2018
 ====================
 
    * android/
-6744938 manifest: android-8.1.0_r26 -> android-8.1.0_r30
-c5ead4f manifest: Track own external/libvorbis
-
-   * bionic/
-8e024ad linker: Make shim reference path absolute
-
-   * build/make/
-391cf9c build: Add new variable to hold generic build properties
-fb1a406 core: Remove deprecated kernel header dependency path warning
-cc183a1 build: Clean up makefile hook inclusions
-afa5bbb build: Include LineageOS specific properties in build.prop
-d7f06cc Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/build into HEAD
+3588a30 manifest: update rr remote
 
    * device/rr/sepolicy/
-9de5f95 Merge https://github.com/LineageOS/android_device_lineage_sepolicy into oreo
+e7e4f0c Add pocket judge selinux policy
+594be08 sepolicy: Add policy for edgegestureservice
+eef1865 sepolicy: update for rr
 
-   * frameworks/av/
-5e433d7 Merge tag 'android-8.1.0_r30' into lineage-15.1
+   * packages/apps/Snap/
+1dccab4 Snap: turn developer category title into a translatable string
 
-   * frameworks/base/
-c14d0a1 base: introduce trust interface
-
-   * frameworks/opt/telephony/
-ccbfdae Merge tag 'android-8.1.0_r30' into lineage-15.1
-
-   * hardware/interfaces/
-8184564 Merge tag 'android-8.1.0_r30' into lineage-15.1
-
-   * lineage-sdk/
-42eb263 TrustInterface: Remove useless check
-5f75487 TrustInterface: Fix default root access value
-3f0c299 Fix config.xml indentation
-d55299f sdk: Introduce Trust Interface
-
-   * packages/apps/LineageParts/
-e72903f LineageParts: fix Trust onBoarding completion when clicking
-6ce4474 LineageParts: introduce Trust interface
-
-   * packages/apps/Settings/
-1bf4f05 Zuk Maintainer Changes
-8099ba6 Privacy Guard: Add icon for VPN permission
-3c7f254 Privacy Guard: Avoid NPE when tinting permission icons
-a71cbe7 Move BQ phone into the right catagory (#977)
-b91f8b1 Settings: add Trust interface hook
-
-   * packages/providers/MediaProvider/
-6fde9ca Merge tag 'android-8.1.0_r30' into lineage-15.1
-
-   * packages/providers/UserDictionaryProvider/
-d35f80e Merge tag 'android-8.1.0_r30' into lineage-15.1
-
-   * system/bt/
-2e5099c Merge tag 'android-8.1.0_r30' into lineage-15.1
+   * system/sepolicy/
+6a2b401 sepolicy: allow update_engine to bypass neverallows for backuptool
 
    * vendor/rr/
-012d15b main_version: Refactor for RR
-9fb4077 rr: main.mk: fix after f8422996
-9e3ccf4 RR: changelog for 6.1
-62124e5 Merge branch 'oreo' into HEAD
-8e41a55 vendor: introduce Trust interface
-4d7b0cd lineage: qcom: Enable TARGET_USES_COLOR_METADATA for msm8937 & msm8953
-f842299 build: Clean up makefile inclusions
-5f576c4 apns: Add UPC Mobile
-a4a63e6 build: Use TOPDIR, not TOP
-6186073 clear_vars: Remove Maven leftovers
-4945c55 build: Remove HTTP_PREBUILT
-e64f286 build: Remove maven make rules
-8df42a7 rr: update for v6.1.0
+88a7815 vendor: update repopick to work with RR's gerrit
 
 ====================
-     06-11-2018
+     06-24-2018
+====================
+
+   * android/
+b0ac8aa manifest: set review URL
+03b3832 snippets: rr.xml: cleanup
+
+   * device/qcom/sepolicy/
+7290a34 sepolicy: Allow perf HAL to set freq props
+c601ff4 legacy: allow gnss to create dir for xtra data
+a5d6ea2 legacy: Add rules for init.qcom.bt.sh
+
+   * frameworks/base/
+86d9a45 Stop crashing qs tiles during boot
+4a4369d Don't show confirm dialog on disable Cellular QS tile
+
+====================
+     06-23-2018
+====================
+
+
+   * bootable/recovery/
+ac258a4 update_verifier: skip verity to determine successful on lineage builds
+97d1ae9 Add runtime checks for A/B vs traditional updates
+
+   * device/rr/sepolicy/
+c9b0d95 sepolicy: add rules for updater and update_engine
+37422f7 common: add update_engine policies
+
+   * lineage-sdk/
+b4c2ab6 lineage-sdk: Add vendor platform signature overlay
+
+====================
+     06-22-2018
 ====================
 
 
    * bionic/
-7bc47fc linker: Remove unused find_libraries declaration
+ed4c3a6 bionic: Sort and cache hosts file data for fast lookup
 
-   * frameworks/native/
-bd40653 Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/native into oreo
+   * bootable/recovery/
+bc57208 recovery: Scale logo image if necessary
+45e8b03 recovery: minui: Implement image scaling
+118d848 recovery: Allow bypassing signature verification on non-release builds
+e895ce4 recovery: Allow detecting user/release build at compile time
+cd840c4 recovery: Rework sideload threading code for flexibility
+
+   * device/rr/sepolicy/
+41ac4fa sepolicy: Label aw2013 HIDL light HAL
+
+   * hardware/lineage/interfaces/
+1951e03 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
+
+   * hardware/qcom/audio-caf/msm8916/
+8747be1 Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
+
+   * hardware/qcom/audio-caf/msm8974/
+e43a121 visualizer: Build with BOARD_VNDK_VERSION
+3c29a7e voice_processing: Build with BOARD_VNDK_VERSION
+9ee58e7 post_proc: Build with BOARD_VNDK_VERSION
+ded474f mm-audio: Build with BOARD_VNDK_VERSION
+4325e02 hal: Build with BOARD_VNDK_VERSION
+
+   * hardware/qcom/display-caf/msm8916/
+e7f8039 Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
+
+   * hardware/qcom/media-caf/msm8916/
+55e0ac7 Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
+
+   * hardware/qcom/media-caf/msm8974/
+7d2d0cb Build libstagefrighthw with BOARD_VNDK_VERSION
+
+   * packages/apps/Settings/
+eb8ec76 Remove A6020 as OFFICIAL
+60bd552 Official GSI Images
+
+====================
+     06-21-2018
+====================
+
+
+   * bootable/recovery/
+896f9d3 recovery: Allow device specific backlight path
+ebb529c recovery: Add statusbar margin for panels with rounded corners
+
+====================
+     06-20-2018
+====================
+
 
