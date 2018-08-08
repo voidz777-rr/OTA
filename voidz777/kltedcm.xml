@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <kltedcm>
-<Filename>RR-O-v6.1.0-20180729-kltedcm-Unofficial.zip</Filename>
+<Filename>RR-O-v6.1.0-201800808-kltedcm-Unofficial.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">https://www.androidfilehost.com/?fid=5862345805528061046</LatestBuildUrl>
+  description="Download Latest Build">https://www.androidfilehost.com/?fid=5862345805528068870</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
