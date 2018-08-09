@@ -9,6 +9,13 @@
 
    * device/lge/hammerhead/
 f5125ea hammerhead: Pin modified time_daemon blob
+
+====================
+     08-07-2018
+====================
+
+
+   * device/lge/hammerhead/
 6718c17 Check result of registerAsService in dumpstate.
 41fd02d dumpstate HAL uses "default" service name
 c8954bf Switch Dumpstate HAL to hal_server_domain
@@ -17,11 +24,6 @@ c8954bf Switch Dumpstate HAL to hal_server_domain
 0ebe423 Dumpstate: convert to hidl implementation.
 19e180c Uses libdumpstateheaders instead of LOCAL_C_INCLUDES.
 c0690a7 Uses new Dumpstate class functions on dumpstate_board().
-
-====================
-     08-07-2018
-====================
-
 
    * hardware/qcom/power/
 34c7410 power: Fix several typos in power profiles
@@ -50,9 +52,6 @@ e6f8222 base: ROM size calculation error on 4GB ROM device
    * packages/apps/Camera2/
 
    * packages/apps/CellBroadcastReceiver/
-
-   * packages/apps/Contacts/
-19916d5 Allow calling contacts via specific phone accounts.
 
    * packages/apps/DocumentsUI/
 
@@ -92,9 +91,6 @@ e6f8222 base: ROM size calculation error on 4GB ROM device
 
    * packages/services/BuiltInPrintService/
 
-   * packages/services/Telephony/
-613cdfe Use proper summary for network select list preference on dsds/dsda/tsts
-
 ====================
      08-05-2018
 ====================
@@ -107,7 +103,6 @@ e6f8222 base: ROM size calculation error on 4GB ROM device
    * external/f2fs-tools/
 3aac42a fsck: Fix conflicts with libext2_quota
 e4ea681 fsck: Update libf2fs_fsck source file list
-2dcd2b0 Android.bp/mk: update strings to reflect v1.11.0 release
 
    * frameworks/base/
 e73bae6 Add DNS_TETHER to the list of UIDs in the framework.
@@ -120,6 +115,30 @@ a0bace4 Scroll: modified velocitytracker
    * kernel/lge/hammerhead/
 8aa23f3 defconfig
 510cb6a defconig
+
+   * packages/apps/Contacts/
+19916d5 Allow calling contacts via specific phone accounts.
+
+   * packages/apps/Email/
+430cc87 Update strings for crowdin
+
+   * packages/apps/Settings/
+
+   * packages/apps/SnapdragonCamera2/
+79e555b SnapdragonCamera2: fix some ui disturbances
+
+   * packages/services/Telephony/
+613cdfe Use proper summary for network select list preference on dsds/dsda/tsts
+
+====================
+     08-04-2018
+====================
+
+
+   * external/f2fs-tools/
+2dcd2b0 Android.bp/mk: update strings to reflect v1.11.0 release
+
+   * kernel/lge/hammerhead/
 3a70363 workqueue: rename kernel/workqueue_sched.h to kernel/workqueue_internal.h
 3f5c6ea workqueues: Introduce new flag WQ_POWER_EFFICIENT for power oriented workqueues
 46d4d0c Revert "epoll: use freezable blocking call"
@@ -377,26 +396,8 @@ cc44041 workqueue: reimplement work_on_cpu() using system_wq
 5fc1ab9 workqueue: perform cpu down operations from low priority cpu_notifier()
 b30d86c cpufreq / ACPI: Fix not loading acpi-cpufreq driver regression
 
-   * packages/apps/Email/
-430cc87 Update strings for crowdin
-
-   * packages/apps/Settings/
-
-   * packages/apps/SnapdragonCamera2/
-79e555b SnapdragonCamera2: fix some ui disturbances
-
    * system/vold/
 3fc5dbb secdiscard: should pin_file to avoid moving blocks in F2FS
-
-====================
-     08-04-2018
-====================
-
-
-   * packages/apps/SnapdragonCamera2/
-5536dd8 SnapdragonCamera2: fix setting icon for redeye reduction
-9397592 remove deepportrait for now
-7728f0a what the....
 
 ====================
      08-03-2018
@@ -417,6 +418,9 @@ be6cba6 Kill Logspam
 f3a071b Add Maintainer for Taco: Yu Yureka 2
 
    * packages/apps/SnapdragonCamera2/
+5536dd8 SnapdragonCamera2: fix setting icon for redeye reduction
+9397592 remove deepportrait for now
+7728f0a what the....
 16a4a19 Merge tag 'LA.UM.6.3.r4-04700-sdm845.0' into android-8.1
 
 ====================
@@ -602,6 +606,572 @@ dfc9c3b cpufreq: interactive: add io_is_busy interface
 e5e9442 selinux: Fix Kernel panic due to NULL pointer dereference
 80e67c5 msm: mdss: Use interruptible wait to not affect load average
 
+====================
+     08-01-2018
+====================
+
+
+   * frameworks/opt/telephony/
+b551113 IMS: Sudden deregisteration takes place soon after registeration.
+
    * packages/apps/Settings/
 a46165f Update potter maintainer
 
+====================
+     07-31-2018
+====================
+
+   * android/
+ecf9898 Enable LineageCustomizer
+
+   * build/make/
+2f96522 core: config: Use host ijar if requested
+4509180 dex2oat: disable multithreading for WSL
+1f9d4d6 Add detection for WSL
+349911a Adapt ijar for WSL
+
+   * frameworks/base/
+b44aaa3 Proper supplementary service notification handling (1/5).
+
+   * lineage-sdk/
+
+   * packages/apps/Dialer/
+2e4c33a Proper supplementary service notification handling (5/5).
+9c5a911 Re-add call statistics.
+0f4ccb2 Allow per-call account selection.
+
+   * packages/apps/LineageParts/
+58478f2 LineageParts: res: Delete duplicated and unused strings
+
+   * packages/apps/Settings/
+
+   * packages/services/Telecomm/
+246a165 Proper supplementary service notification handling (3/5)
+
+   * packages/services/Telephony/
+c27def3 Proper supplementary service notification handling (4/5).
+
+   * system/core/
+498c2dd bsdgrep: for -r, use the working directory if none specified
+
+   * vendor/rr/
+46f261b ATV: Build LineageCustomizer
+95ca5f6 prebuilt: apn: Sprint 2: Drop http definition from MMSC proxy
+a4e98c8 tools: Bump baksmali/smali to v2.2.4
+4f6b313 config/common: Organize filesystems tools
+eeae7bc prebuilt: apn: Sprint 2: Make IPv6 MMS Proxy default for the apn
+e2b60df config/common: Remove BluetoothExt from PRODUCT_PACKAGES
+
+====================
+     07-30-2018
+====================
+
+
+   * hardware/qcom/audio-caf/msm8998/
+cc24d96 hal: Add missing compress voip PCM device ID
+
+   * packages/apps/AudioFX/
+1be86c7 AudioFX: bump to api27
+
+   * packages/apps/SnapdragonCamera2/
+454d7dc Don't use sub thread before fix the sync issue.
+ba3a7a1 add notch_size config
+
+====================
+     07-29-2018
+====================
+
+
+   * external/f2fs-tools/
+8273bd0 fsck: Fix 1.11.0 compilation
+235999b f2fs-tools: release 1.11.0
+b93ced9 check_f2fs: return 0 all the time
+e18e1e3 sload.f2fs: fix the missing of bit mask for file type
+2be1f00 sload.f2fs: give correct file type
+fb6547e fsck.f2fs: fix check order in -p1
+4baf0ce mkfs.f2fs: avoid selinux denial for unnecessary sysfs node
+e6742ab fsck.f2fs: fix stack overflow when reading out nat block
+
+   * packages/apps/Jelly/
+5cfd61b Jelly: Show a Snackbar when removing an HistoryItem
+
+====================
+     07-28-2018
+====================
+
+
+   * packages/apps/SnapdragonCamera2/
+2df733e Merge "Merge 01e6b9d992ea181780268c5ee4b50052234e858f on remote branch"
+2eaa983 Don't use sub thread before fix the sync issue.
+2a8a5bc Merge 01e6b9d992ea181780268c5ee4b50052234e858f on remote branch
+
+   * system/tools/hidl/
+2626915 Add DT_UNKNOWN handling
+4b19c46 Revert "Use stat() to determine file type from readdir()"
+
+====================
+     07-27-2018
+====================
+
+
+   * frameworks/av/
+fefb0b1 NdkMediaCodec: add AMediaCodec_getBufferFormat
+
+   * hardware/qcom/display-caf/apq8084/
+d22c48f libgralloc: Fix adding offset to the mapped base address
+
+   * hardware/qcom/display-caf/msm8960/
+d442734 libgralloc: Fix adding offset to the mapped base address
+
+   * vendor/lge/
+e98409e h918: Update video firmware for 10p+
+
+====================
+     07-26-2018
+====================
+
+
+====================
+     07-25-2018
+====================
+
+
+   * hardware/qcom/power/
+651aa0f power-8084: rework power profiles
+
+   * packages/apps/Email/
+8e69d0e Remove max aspect ratio.
+
+====================
+     07-24-2018
+====================
+
+
+   * hardware/ril-caf/
+5380335 libril: Protect against NULL unsolicited response function
+
+====================
+     07-23-2018
+====================
+
+
+   * bionic/
+a7b7640 libc: Mark libstdc++ as vendor available
+
+   * device/lge/hammerhead/
+7869ed5 LineageOS rebrand
+4e31e85 hammerhead: doze: Hello doze!
+4dcf671 Revert "lights: [TEST] Disable battery charging LED notifications"
+207525e RRify
+
+   * packages/apps/Settings/
+d5444df Fix Kirin GSI strings
+
+====================
+     07-22-2018
+====================
+
+   * android/
+828060c manifest: Switch to forked external/libdrm
+2d95bf6 Add hardware/lineage/telephony to the manifest
+
+   * build/make/
+7d0effa build: Never set persist.sys.usb.config=none in recovery
+
+   * device/rr/sepolicy/
+1163616 sepolicy: recovery: Allow (re)mounting system
+
+   * frameworks/base/
+690ae71 frameworks/base: squash import translations from LineageOS
+
+   * lineage-sdk/
+e4c84e1 Add vendor security patch level to device info
+eda2ae7 ProfileManager: Make PROFILE_SELECTED broadcast explicit
+
+   * packages/apps/Contacts/
+867a3a7 Revert "Automatically set SIM number to my profile"
+
+   * packages/apps/DUI/
+
+   * packages/apps/Dialer/
+cc5dc5f Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+
+   * packages/apps/Settings/
+4ccdf37 [1/2] Add vendor security patch level to device info
+9810665 Settings: squash update translations from LineageOS
+
+   * system/core/
+2385c9f core: Lockscreen Charging info (1/3)
+
+   * system/sepolicy/
+7e7228a Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+
+   * vendor/rr/
+406a251 kernel: Allow installing modules on system
+90462d8 privapp-permissions: Add new Dialer permissions
+c90d6a3 addonsu: Fix installation on TWRP A/B
+347060d apns: sprint: Default to legacy n.*, allow x.* as an alternative
+
+====================
+     07-21-2018
+====================
+
+
+   * packages/apps/LineageCustomizer/
+8907bcd Initial bringup to tvlauncher config style
+
+   * packages/apps/SnapdragonCamera2/
+01e6b9d Change target SDK to 26.
+
+====================
+     07-20-2018
+====================
+
+
+   * hardware/qcom/display-caf/msm8974/
+740e9f9 libgralloc: Fix adding offset to the mapped base address
+
+   * packages/apps/SnapdragonCamera2/
+eb87a87 SnapdragonCamera:Avoid index out of bounds
+5650976 Merge "SnapdragonCamera: version info 2.02.011"
+d2a5485 Merge "Move close camera to sub-thread for avoiding ANR."
+
+====================
+     07-19-2018
+====================
+
+
+   * packages/apps/Dialer/
+b9d2a3a Re-add call recording.
+
+   * packages/apps/SnapdragonCamera2/
+5bb5926 Merge "SnapdragonCamera:Fix recording state"
+
+   * packages/apps/UnifiedEmail/
+4ab14c1 Don't re-show search bar on query click.
+
+====================
+     07-18-2018
+====================
+
+
+   * packages/apps/SnapdragonCamera2/
+d896e92 SnapdragonCamera:Fix recording state
+e453ddc Add a property to set video snapshot size
+
+====================
+     07-17-2018
+====================
+
+
+   * frameworks/native/
+73be23d Revert "InputDispatcher: On keypress, deliver keycode to pokeUserActivity"
+50886a0 Revert "PowerManager.h: Define USER_ACTIVITY_FLAG values"
+
+   * hardware/lineage/telephony/
+24f40ad telephony: Actually pull in telephony-ext into final build
+
+   * packages/apps/Recorder/
+07eb6ad Recorder: Use native functions to get H264 info
+
+   * packages/apps/Settings/
+90023a5 settings: Add platform and RAM to "Model & Hardware" dialogue
+cafb6b8 DisplaySettings: Allow devices to opt out from lift to wake detection
+865dbc8 Settings: handle decrypting larger pattern sizes for sw600dp
+
+   * packages/apps/SnapdragonCamera2/
+9d930f1 Merge "SnapdragonCamera: Added stats visualizer"
+
+   * vendor/lge/
+d401e28 g2-common: kang time_daemon from hammerhead
+50fc1aa g2-common: source-built libril * kang bacon's lollipoop qmi stack   oneplus/bacon @c44865c3e2b8efc6a36414ecdecffc4d32a28d71   plus libsystem_health_mon.so @f04f9950a506d3612f0e09e90b8dc6f54eef8bb7
+
+====================
+     07-16-2018
+====================
+
+
+   * build/make/
+6e02efb build: Allow devices to provide prebuilt vbmeta image
+b6748fa build: recovery: add vendor to exclusion list
+
+   * device/qcom/sepolicy/
+6c5a9ef Allow binderized keymaster HAL access to firmware files.
+
+   * device/rr/sepolicy/
+237ca13 Make fuseblk use vfat context
+
+   * frameworks/base/
+2d0e747 Disable warning in StaticLayout
+d783d4e Don't spoil printservice log if not needed
+6da1fb7 Don't crash if there is IR HAL is not declared
+12e3f4b Fix janky traffic indicator tint
+4b2e667 Fix broadcast receiver leak issue
+6c8a24c base: recents: properly size task lock icon in stock recents
+0d49c9d Check for null path in getInternalPathForUser
+164c789 ScanRecord.getServiceData NPE fix
+d4ffa2c Return null if a provider died before acquisition
+42b4e4b MtpDatabase: Fix potential NULL dereference errors
+adb9085 core: ChooserActivity: fix android crash from null object
+ef18b2d fix synchronization bug when notification enqueue/cancel
+7c89073 Themes: fix vpn status dialog
+152f3bc Move BT state to OFF when BLE app count is zero
+c35ab59 Account: Fix the risk of sqliteconnection leak
+0985684 base: SystemUI: center roaming indicator correctly
+3b333e5 SystemUI: stop filling logcat with useless stacktrace
+61e4a35 Release SQLite page cache as much as it can
+ada22db Remove unused calling for better performance
+c7ad2b0 core: Fix long overflow issue in NetworkStats
+c5665c1 Fix problems caused by multithreading in VibratorService
+fb3ccee SystemUI: Wallpaper is black or cut in half vertically
+8d7cb27 SystemUI: Keyguard: fix sim pin
+ed7c02a SystemUI: Fix Data Usage tile to match Settings
+83f2f66 Speed up the speed of computer MTP query
+b3321d7 Fix a 'memory leak'
+8d97e42 Location: Skip processing when reciever pointer is null
+f96972b SystemUI: require auth for adb wireless
+4918f1b base: limit direct share targets to reduce lag
+
+   * hardware/lineage/telephony/
+0f1392f Cleanup usage of static
+27c445e Return proper value for isDsdaEnabled
+
+   * lineage-sdk/
+eeedd60 styles: do not enforce permission when it's not needed
+52327bb sdk: Trust: better warnings management
+2f82f79 Regen lineage_current
+1c89928 lineage-sdk: Introduce TelephonyExtUtils
+3b194b4 Trust: warn if build is signed with insecure keys
+de27973 TrustInterface: Handle unsupported encryption state
+c9aece2 Trust: add action to disable alerts to notifications
+
+   * packages/apps/DUI/
+
+   * packages/apps/LineageParts/
+0b1c696 parts: Trust: better warnings management
+00f4bfa LineageParts: Complete and correct SMS limits port
+179c9b4 parts: add SMS rate limit setting
+92d3a99 Align trust onboarding welcome change
+a1ec635 Parts: expose toggle for disabling trust alerts
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Snap/
+
+   * packages/services/OmniJaws/
+
+   * vendor/rr/
+3098b31 extract_utils: Newline love for adb extraction
+201e171 apns: sprint mms: mms.sprintpcs.com > oap7.sprintpcs.com
+dfc742c apns: sprint: n.ispsn -> x.ispsn
+34b3f58 build: Add support for sdm845 platform
+a146fcf envsetup: Filter unique push paths in dopush
+2089e8c envsetup: Fix adb recovery state detections
+8c664c0 extract_utils: make get_file() able to search paths with and w/o /system prefix
+f96411c extract_utils: extract(): fix src not being searched in "src:dst;args" spec
+2d86bf7 extract_utils: extract(): rename DEST variable to VENDOR_REPO_FILE
+8be64ee extract_utils: extract(): rename ARGS variable to SPEC_ARGS
+041190a extract_utils: extract(): rename FILE variable to SPEC_SRC_FILE
+86d1f20 extract_utils: extract(): rename FROM variable to SPEC_DST_FILE
+73e25dd extract_utils: create src_file() function to mirror behavior of target_file()
+441d8af extract_utils: prefix_match(): do not strip target_args from its output
+0a0db4a extract_utils: target_file() and target_args() cleanup
+184690b Revert "extract_files: Add support for paths without system/"
+89aaf94 Revert "extract_utils: Fix makefile generation issues"
+
+====================
+     07-15-2018
+====================
+
+
+   * frameworks/native/
+44e3085 sensorservice: customize sensor fusion mag filter via prop
+
+   * hardware/lineage/telephony/
+48a1c69 telephony: You have to add telephony-ext to boot jars
+
+   * hardware/qcom/power/
+64de35f power: Allow devices disabling power stats completely
+
+   * packages/apps/Settings/
+d10c8ba Settings: Update maintainers for Z00L & Z00T
+ca23d6d Update maintainer for merlin
+
+   * system/sepolicy/
+12f18fd sepolicy: public: Exclude Recovery from system mount neverallow
+9667a55 sepolicy: Allow init to modify system_blk_device
+
+====================
+     07-14-2018
+====================
+
+
+====================
+     07-13-2018
+====================
+
+
+   * external/libdrm/
+175278e libdrm: Avoid additional drm open close
+
+   * hardware/qcom/display-caf/sdm845/
+206194d Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
+
+   * packages/apps/SnapdragonCamera2/
+16633cd Merge 92d53d986210149235dc2529cd4834eb43f8350b on remote branch
+
+====================
+     07-12-2018
+====================
+
+
+   * frameworks/av/
+2ad1834 Camera: CameraHardwareInterface: Releasing mHIDLMemoryMapLock in QdataCallback
+0f5a5ed Camera:CameraService: Added lock on mHIDLMemPoolId in QDataCallback..
+
+   * packages/apps/Settings/
+bb5a36a Update device maintainer for YU Yureka Black(garlic)
+
+   * packages/apps/SnapdragonCamera2/
+175b0dd SnapdragonCamera: version info 2.02.011
+a686051 Move close camera to sub-thread for avoiding ANR.
+
+   * vendor/rr/
+5ca74b1 Remove the Official selection from script
+
+====================
+     07-11-2018
+====================
+
+
+   * device/lge/hammerhead/
+e239c30 sepolicy: Grant time_daemon sys_time capability
+cc1ba3b init: Modify time_daemon to allow settimeofday() fallback
+
+   * hardware/lineage/telephony/
+41d2768 Add README for how to use this repo
+b32bdc9 Allow opting out of building this jar
+208646f Minor thread safety fixes
+b8e1462 Store provisioning pref separately from SIM status
+8fe9d76 Reenable both SIM cards on hotswap
+6374c2a Reset default sims on deactivation
+01b8f28 Implement crude manual SIM provisioning
+b18c7bf Implement a dummy IExtTelephony service
+a4efe66 Implement a fake qti-telephony-common.jar
+
+   * system/update_engine/
+7e347c2 update_engine: Add performance mode
+
+   * vendor/lge/
+7b892ed hammerhead: Modify time_daemon to allow settimeofday() fallback
+
+====================
+     07-10-2018
+====================
+
+
+   * frameworks/native/
+74b51bc native: drop hwui properties on O-MR1
+
+   * hardware/qcom/fm/
+
+   * packages/apps/Dialer/
+
+   * packages/apps/Eleven/
+
+   * packages/apps/FMRadio/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/Jelly/
+
+   * packages/apps/LockClock/
+
+   * packages/apps/Recorder/
+
+   * packages/apps/Snap/
+
+   * packages/apps/SnapdragonCamera2/
+c4cfc15 Revert change 2323574/7
+
+   * packages/apps/Terminal/
+
+   * packages/providers/WeatherProvider/
+
+   * system/core/
+338ddb1 adb: Add wait-for-online command
+
+====================
+     07-09-2018
+====================
+
+
+   * device/lge/hammerhead/
+aca1cb2 Revert "sepolicy: Clean up priv_app logspam"
+
+   * packages/apps/SnapdragonCamera2/
+1c41941 SnapdragonCamera: Added stats visualizer
+
+   * system/security/
+169fff0 key_store:Using euid instead of uid when upgrade wifi blobs
+
+====================
+     07-08-2018
+====================
+
+   * android/
+96deb58 manifest: android-8.1.0_r30 -> android-8.1.0_r36
+
+   * build/make/
+a3f693d Add support for ZSH arrays
+e216ed5 build: Allow building disabled vbmeta images in signing process
+e9c662b Merge tag 'android-8.1.0_r36' into HEAD
+
+   * frameworks/base/
+3afdcff Merge tag 'android-8.1.0_r36' into HEAD
+
+   * hardware/qcom/power/
+2d1ce22 power-845: Fix compilation errors
+9e76194 Fix interaction boost higher cpu freq perflock
+b06e15f power: Adding hints for SDM845
+
+   * packages/apps/Settings/
+3a3df84 Now we have Official Kirin GSI's
+
+   * packages/services/Telephony/
+c055946 Merge tag 'android-8.1.0_r36' into HEAD
+
+   * vendor/rr/
+8d6d0fb Add Iliad APN
+28ca80b apns: Add missing sprint roaming APN and set bearer_bitmasks
+567bf63 bfqio: Fix warning when building with BOARD_VNDK_VERSION := current
+7c82521 vendor: fix ro.adb.secure for vendor-building devices
+d566e58 apns: Adjust Sprint LTE internet to allow tether
+
+====================
+     07-07-2018
+====================
+
+   * android/
+80179f9 manifest: Switch to our fork of art
+c1ccb7f lineage: Add sdm845 platform    *s
+
+   * device/lge/hammerhead/
+300bbf1 sepolicy: Allow camera hal interaction with mpdecision
+
+   * frameworks/native/
+0791974 Merge tag 'android-8.1.0_r36' into HEAD
+
+   * hardware/qcom/display-caf/msm8998/
+9fa8467 gralloc: Add missing BT601_6_625 handing
+20bd3e8 gralloc1: Add support for secure display.
+6c718aa liblight: Use char array instead of char pointer array for file name
+
+   * packages/apps/DUI/
+
+   * packages/apps/LineageParts/
+
+   * packages/apps/ResurrectionOTA/
+
+   * vendor/lge/
+f378b16 bullhead: update blobs from July 2018 OPM6.171019.030.E1 factory image
