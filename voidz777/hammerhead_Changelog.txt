@@ -3,146 +3,423 @@
 
 
 ====================
+     09-09-2018
+====================
+
+
+====================
+     09-08-2018
+====================
+
+   * android/
+6d2f4fa manifest: android-8.1.0_r43 -> android-8.1.0_r46
+
+   * build/make/
+054cae0 Merge tag 'android-8.1.0_r46' into oreo
+
+   * device/rr/sepolicy/
+af04e5e Add pocket judge selinux policy
+6bcb84e sepolicy: Add policy for edgegestureservice
+b3d3da7 sepolicy: update for rr
+
+   * frameworks/base/
+ee44dbf Merge tag 'android-8.1.0_r46' into oreo
+
+   * packages/apps/Settings/
+1d1062a Merge tag 'android-8.1.0_r46' into oreo
+
+   * system/sepolicy/
+688b82a Merge tag 'android-8.1.0_r46' into oreo
+
+====================
+     09-07-2018
+====================
+
+
+   * device/lge/hammerhead/
+fdd73c0 Add config_setColorTransformAccelerated
+
+   * frameworks/base/
+6d46a1e [1/3] base: make outline the default weather icon pack
+
+   * packages/apps/OmniStyle/
+985d154 [2/3] OmniStyle: make outline the default icon package
+
+   * packages/apps/Settings/
+065c541 Add enchilada maintainer
+
+====================
+     09-06-2018
+====================
+
+
+   * device/lge/hammerhead/
+465161c Make AOD available
+
+   * frameworks/base/
+63100fb fix color in the volume dialog for the inactive element
+
+   * hardware/qcom/media-caf/apq8084/
+330d852 mm-video-v4l2: Protect buffer access and increase input buffer size
+
+====================
+     09-05-2018
+====================
+
+
+   * frameworks/av/
+a7e6e1d Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * frameworks/opt/telephony/
+8dc51c0 TelephonyComponentFactory: Fix SubscriptionInfoUpdater overloading
+
+   * hardware/broadcom/wlan/
+8c96d23 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * hardware/qcom/display/
+27b78f2 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * hardware/qcom/display-caf/msm8996/
+56d639d Fix Buffer Overflow in Vendor Service display.qservice
+
+   * hardware/qcom/display-caf/msm8998/
+7a01a09 Fix Buffer Overflow in Vendor Service display.qservice
+
+   * hardware/qcom/display-caf/sdm845/
+1e16c6d Fix Buffer Overflow in Vendor Service display.qservice
+
+   * hardware/qcom/media/
+85d5d95 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * hardware/qcom/media-caf/msm8974/
+0acdb94 mm-video-v4l2: Protect buffer access and increase input buffer size
+
+   * packages/providers/DownloadProvider/
+aced9e9 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * prebuilts/clang/host/linux-x86/
+88d4aa3 Merge tag 'android-8.1.0_r46' into oreo-mr1
+
+   * system/bt/
+b0a7c13 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * system/libhidl/
+dcab148 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+====================
+     09-04-2018
+====================
+
+
+   * packages/services/OmniJaws/
+360a582 OmniJaws: fix theme for widget configure acitvity
+53eadec OmniJaws: reduce minimal size of widget
+b3a3225 OmniJawas: add current weather condition widget
+
+====================
+     09-03-2018
+====================
+
+
+====================
+     09-02-2018
+====================
+
+
+   * vendor/lge/
+2248c7d msm8996: Add hotword enrollment APKs from oreo
+5146fcc msm8996: Update graphics stack from LA.UM.6.5.r1-06700-8x96.0
+cd369bb msm8996: Move libcir_driver to vendor
+a29024d msm8996: Read sensor configs from /vendor/etc/sensors
+
+====================
+     09-01-2018
+====================
+
+
+   * device/lge/bullhead/
+4609747 Enable led pulse by default
+9de475c Allow HWC color transformation
+
+   * frameworks/base/
+
+   * packages/apps/Settings/
+
+====================
+     08-31-2018
+====================
+
+
+   * build/make/
+586592d Also check if BOARD_KERNEL_SEPARATED_DTBO is set
+
+   * packages/apps/Messaging/
+
+   * packages/providers/DownloadProvider/
+7a51050 Fix plural translatability for download speed
+
+   * packages/services/Telecomm/
+b6fe13a Telecom: Properly depend on Lineage SDK
+
+   * packages/services/Telephony/
+
+   * vendor/rr/
+ac23bec lineage: enable roundIcons by default
+37ff5c1 lineage: Disable IPv4 for T-Mobile (and MetroPCS) domestically
+
+====================
+     08-30-2018
+====================
+
+
+====================
+     08-29-2018
+====================
+
+
+   * hardware/qcom/power/
+1be7662 power-8916: fix using wrong array size in perform_hint_action
+
+   * packages/apps/Email/
+fd45e56 Don't request battery optimization exemption if not needed.
+
+   * vendor/lge/
+c75a1f4 msm8996: Add thermal-engine from Oreo
+
+====================
+     08-28-2018
+====================
+
+   * android/
+7c0d8ed rr: manifest: track updated clang repository from AOSiP GitHub
+
+   * frameworks/base/
+
+   * packages/apps/Settings/
+
+====================
+     08-27-2018
+====================
+
+
+   * external/openssh/
+7e0e3db Disable StrictModes
+825d447 Add Android support
+bcbd12e Revert "upstream: Ensure that D mod (P-1) and D mod (Q-1) are calculated in"
+
+   * packages/apps/Profiles/
+4958985 Profiles: Properly depend on Lineage SDK
+
+====================
+     08-26-2018
+====================
+
+
+   * device/lge/bullhead/
+61c3f69 RRifY
+
+   * packages/apps/AudioFX/
+c71c96c AudioFX: Properly depend on Lineage SDK
+
+====================
+     08-25-2018
+====================
+
+
+====================
+     08-24-2018
+====================
+
+
+   * device/rr/sepolicy/
+52da0cb selinux: add domain for Gallery
+e61f6cd selinux: add domain for snap
+
+====================
+     08-23-2018
+====================
+
+
+   * external/openssh/
+71508e0 shorten temporary SSH_REGRESS_TMP path
+26739cf rebuild dependencies
+ff72902 fix path in distclean target
+7fef173 upstream: memleak introduced in r1.83; from Colin Watson
+
+   * external/p7zip/
+6d3db82 Actual working support for building on Android
+1aa1dce Use a sane naming convention for the shared library
+6619bec Fix CVE-2018-10115
+6d75c8f Fix CVE-2018-5996
+0a45d87 Fix CVE-2017-17969
+9d1f86e Fix CVE-2016-9296
+591bf76 Import p7zip 16.02
+
+   * frameworks/av/
+01ccfc1 mediascanner: Accept .opus file extension.
+
+   * frameworks/base/
+
+   * packages/apps/Gallery2/
+8ccbc4f Gallery: use platform cert
+
+   * packages/apps/LineageParts/
+4d4583c Fix Trust strings again
+f0bfea5 LineageParts: Fix unescaped quote in trust_feature_security_patches_explain
+2ad4688 Trust: String changes for accuracy of language
+2030f81 LineageParts: Add missing recycle() calls
+27ae53d LineageParts: Add missing cursor close
+0cbd274 LineageParts: add one finger swipe up from home gesture string
+
+   * packages/apps/Settings/
+
+   * packages/apps/Snap/
+ae27a9f Snap: use platform cert
+
+====================
+     08-22-2018
+====================
+
+
+   * device/qcom/sepolicy/
+c673533 Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+
+   * external/openssh/
+b8ae02a upstream: AIX reports the CODESET as "ISO8859-1" in the POSIX locale.
+bc44ee0 	modified:   openbsd-compat/port-uw.c 	remove obsolete and un-needed include
+
+   * frameworks/native/
+ed8976d Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_frameworks_native into HEAD
+
+   * lineage-sdk/
+bfea90d sdk: Add migration for /missing/ custom button actions
+e14deb8 Regen lineage_current
+
+   * vendor/rr/
+88bb767 build: Add dtbo task
+feb7696 config/common: Clean up debug packages
+
+====================
+     08-21-2018
+====================
+
+
+====================
+     08-20-2018
+====================
+
+
+   * external/openssh/
+829fc28 Missing unistd.h for regress/mkdtemp.c
+
+   * packages/apps/Settings/
+09d0b0c Update herolte maintainer
+
+   * packages/apps/Snap/
+
+====================
+     08-19-2018
+====================
+
+
+   * packages/apps/Snap/
+159d79b CameraSettings: Do not crash if zoom ratios are not exposed
+
+====================
+     08-18-2018
+====================
+
+
+   * device/huawei/angler/
+2b747c5 angler: Enable led pulse by default
+935ff73 angler: Override device has no menu key
+1ec9cc3 angler: Enable burn in protection
+7e5deae angler: Add config for live display color temp
+9ed0520 angler: Allow HWC color transformation
+4749290 angler: Enable VoLTE for few
+bcecf1b overlay: Fixes for new VoLTE without VT setup
+
+   * packages/apps/Eleven/
+fd34342 Eleven: bump to api26
+
+====================
+     08-17-2018
+====================
+
+
+   * external/openssh/
+c8313e4 update version numbers in anticipation of release
+
+   * packages/apps/Camera2/
+
+   * packages/apps/CertInstaller/
+
+   * packages/apps/DocumentsUI/
+
+   * packages/apps/Email/
+
+   * packages/apps/ExactCalculator/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/Jelly/
+
+   * packages/apps/ManagedProvisioning/
+
+   * packages/apps/Nfc/
+
+   * packages/apps/PackageInstaller/
+
+   * packages/apps/PhoneCommon/
+
+   * packages/apps/TvSettings/
+
+   * packages/apps/UnifiedEmail/
+
+   * packages/inputmethods/LatinIME/
+
+   * packages/providers/DownloadProvider/
+
+====================
+     08-16-2018
+====================
+
+
+====================
+     08-15-2018
+====================
+
+
+   * vendor/rr/
+d020f6a soong_config: Add TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE
+
+====================
+     08-14-2018
+====================
+
+
+   * external/openssh/
+477b49a configure: work around GCC shortcoming on Cygwin
+b091794 cygwin: add missing stdarg.h include
+
+   * frameworks/av/
+691c917 OMXNodeInstance: Allow dynamic native handle for shared mem buffer
+
+   * packages/apps/Settings/
+a096f26 Update ZenFone 3 maintainer
+
+====================
      08-13-2018
 ====================
 
 
+   * external/openssh/
+c3903c3 upstream: revert compat.[ch] section of the following change. It
+1b9dd4a upstream: better diagnosics on alg list assembly errors; ok
+
+   * packages/apps/Snap/
+516483b Snap: Allow quickreader to work with secure device
+
    * vendor/rr/
 cf57f31 backuptool: fix restoring after commit 87bdbc138b6d27b4bd67b964eda24df4d8dbe2c8
-
-====================
-     08-12-2018
-====================
-
-
-   * lineage-sdk/
-b486978 sdk: Add minimal LineageSettingsService
-3c3ad38 Import preference class for custom hostname feature
-301cccb sdk: Allow controllable brightness for non-RGB segmented battery LEDs
-9e71784 sdk: Rework reading mode API
-
-   * packages/apps/LineageParts/
-1abdf44 LineageParts: Remove PrivacySettings
-17fc3ad LineageParts: Allow brightness control for segmented LEDs
-7ac9fc8 LineageParts: Update reading mode toggle for new API
-
-====================
-     08-11-2018
-====================
-
-   * android/
-1a21a25 lineage: Remove no longer used commented repositories
-8baa7f9 manifest: android-8.1.0_r36 -> android-8.1.0_r43
-
-   * build/make/
-f32d99e Merge tag 'android-8.1.0_r43' into HEAD
-
-   * frameworks/base/
-688663e fw/b lights: Allow black notification color
-78c72dd Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/frameworks/base into HEAD
-
-   * hardware/lineage/interfaces/
-9bcc1bd Update makefiles from anywhere.
-
-   * hardware/lineage/lineagehw/
-a027dee lineagehw: Check if files are readable when we read them
-
-   * packages/apps/Messaging/
-fc5f2d9 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_packages_apps_Messaging into HEAD
-
-   * packages/apps/Settings/
-daffc06 Merge tag 'android-8.1.0_r43' into HEAD
-477967d Expose option to change the device hostname.
-
-   * packages/services/Telephony/
-71793c3 Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
-
-   * vendor/lge/
-a2b53f3 bullhead: Update blobs from Aug 2018 OPM6.171019.030.H1 factory image
-
-   * vendor/rr/
-87bdbc1 backuptool: Resolve incompatible version grep syntax
-67af102 lineage: Set perms on reading_mode sysfs
-b57d9f1 lineage: Allow background broadcast for CAMERA_BUTTON
-06483cd Revert "ota: Validate any installed data's signature against our own"
-1b85634 vendor: Copy org.lineageos.settings permission
-
-====================
-     08-10-2018
-====================
-
-
-   * device/lge/hammerhead/
-c892ab3 stop mpdecision
-
-====================
-     08-09-2018
-====================
-
-
-   * external/e2fsprogs/
-81fe13e Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
-
-   * frameworks/av/
-f1f657b Merge tag 'android-8.1.0_r43' into HEAD
-
-   * frameworks/opt/telephony/
-1e612ae Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
-
-   * hardware/lineage/lineagehw/
-82d586c lineagehw: Add support for sysfs ReadingEnhancement
-7f833b8 lineagehw: Update ReadingEnhancement for new API
-
-   * packages/apps/Messaging/
-3686c41 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
-af0e887 Revert "Messaging: Request external storage permission before handling shared files"
-
-   * packages/apps/PackageInstaller/
-e57050a Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
-
-   * packages/apps/Settings/
-c28cb4d Update Lenovo P2 maintainer
-
-   * packages/apps/UnifiedEmail/
-d2fc4bd Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
-
-   * packages/providers/DownloadProvider/
-5ee3e34 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
-
-   * packages/services/Telephony/
-ce5915c Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
-
-   * system/bt/
-37b2ade Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
-
-   * system/vold/
-2aa8eba Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
-
-====================
-     08-08-2018
-====================
-
-
-   * device/lge/hammerhead/
-f5125ea hammerhead: Pin modified time_daemon blob
-
-====================
-     08-07-2018
-====================
-
-
-   * device/lge/hammerhead/
-6718c17 Check result of registerAsService in dumpstate.
-41fd02d dumpstate HAL uses "default" service name
-c8954bf Switch Dumpstate HAL to hal_server_domain
-2ea847d Mark hal_dumpstate_impl as HAL impl domain
-99cfd67 Build dumpstate HAL
-0ebe423 Dumpstate: convert to hidl implementation.
-19e180c Uses libdumpstateheaders instead of LOCAL_C_INCLUDES.
-c0690a7 Uses new Dumpstate class functions on dumpstate_board().
-
-   * hardware/qcom/power/
-34c7410 power: Fix several typos in power profiles
-
-   * packages/apps/AudioFX/
 
