@@ -3,209 +3,463 @@
 
 
 ====================
-     10-07-2018
+     11-11-2018
+====================
+
+
+   * device/lge/bullhead/
+e8f77f7 bullhead: Update build fingerprint to Nov 2018 OPM7.181105.004
+
+   * device/oneplus/enchilada/
+51dce61 enchilada: Move kernel config to sdm845-common
+0365fb9 enchilada: Update OOS Cam and OOS Gallery up to OOS 5.1.11
+4af858e enchilada: Add OnePlus Gallery to prebuilts
+f2f5f7e enchilada: Update OnePlus 6 camera up to OOS 5.1.9
+a529c80 enchilada: add OnePlus camera
+9d0d4ae enchilada: Update autobrightness levels values from omni
+
+   * device/oneplus/sdm845-common/
+d3381e1 sdm845-common: update kernel config file
+f6ca751 sepolicy: allow substratum overlay manager to find overlays
+d7dd334 sdm845-common: Add missing VoLTE props
+7fcaa89 sdm845-common: Add los hw buttons and Aspect Ratio overlays
+505ac32 sdm845-common: don't build snap
+5d4ca8c Revert "sdm845-common: enable camera 2 api for Snap"
+ee06e1a sdm845-common: enable oneplus portrait mode
+45e96ea sdm845-common:camera hal1
+5a251b9 sdm845-common:force hal for op cam
+b26eb86 sdm845-common: Enable Always On Display settings
+6953874 sdm845-common: Add CNE support
+8169f02 sdm845-common: Enable burn-in protection in base
+906f52e sdm845-common: enable camera 2 api for Snap
+d02d009 sdm845-common: Tweak brightness overlays
+f4d1be2 sdm845-common: change default screen off
+d6843d7 sdm845-common: Build dtbo
+
+   * frameworks/av/
+d274ed2 Merge tag 'android-8.1.0_r50' into staging/lineage-15.1_merge-android-8.1.0_r50
+
+   * frameworks/base/
+cd90775 Fw_base - Night auto brightness: restore user brightness values also after reboot
+e52b16e Fw_base - Night Light brightness mode options [1/2]
+2bc9a88 Revert "NightDisplayController: report unvailable if livedisplay feature is present"
+f05cde0 base: Lockscreen customization fixes
+9622ebc Add signature Spoofing permission
+0333b94 Add overlay to config AOD enable default and set to false
+2374e18 Double tap to sleep on lockscreen [1/2]
+2fa6410 Don't update if HeadsUp is disabled
+81a1ee8 base: HeadsUp snooze: reset snoozed packages on settings change
+c40ac42 HeadsUp: timeout [1/2] & HeadsUp: snooze [1/2]
+50ac180 WakelockBlocker [1/2] & AlarmsBlocker [1/2]
+cdba740 Allow to customize notification led light [1/2]
+
+   * packages/apps/Settings/
+ba3a4aa Settings - Night Light brightness mode options [2/2]
+3259454 Double tap to sleep on lockscreen [2/2]
+20869ca HeadsUp: timeout [2/2] & HeadsUp: snooze [2/2]
+1ce5515 WakelockBlocker [2/2] & AlarmsBlocker [2/2]
+cd0d542 Allow to customize notification led light [2/2]
+
+   * vendor/lge/
+028d06e bullhead: Update blobs from Nov 2018 OPM7.181105.004 factory image
+
+====================
+     11-10-2018
+====================
+
+
+   * kernel/lge/bullhead/
+4115353 Merge tag 'android-8.1.0_r0.117' into lineage-15.1
+
+====================
+     11-09-2018
+====================
+
+
+   * packages/apps/Jelly/
+9330ef4 Jelly: Grant REQUEST_INSTALL_PACKAGES permission
+df25d1e Jelly: Set proper mime type when downloading files
+
+====================
+     11-08-2018
+====================
+
+
+   * packages/apps/Nfc/
+af62302 NFCService: Add sysprop to prevent FW download during boot with NFC off.
+
+====================
+     11-07-2018
+====================
+
+   * android/
+71d446b manifest: android-8.1.0_r47 -> android-8.1.0_r50
+
+   * build/make/
+0ec60fd Merge tag 'android-8.1.0_r50' of https://android.googlesource.com/platform/build into HEAD
+
+   * frameworks/av/
+7714cd5 Add missing extensions, fix scan of bad media files.
+eec5372 MatroskaExtractor: handle parse error.
+ee2a06c Don't CHECK for unknown fourcc
+2870b17 Matroska: HEVC support
+
+   * frameworks/base/
+6fefe73 Merge tag 'android-8.1.0_r50' of https://android.googlesource.com/platform/frameworks/base into HEAD
+
+   * packages/apps/Settings/
+67c3d76 Merge tag 'android-8.1.0_r50' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
+
+   * system/bt/
+6de9ffe Merge tag 'android-8.1.0_r50' into staging/lineage-15.1_merge-android-8.1.0_r50
+
+====================
+     11-06-2018
+====================
+
+
+   * hardware/qcom/fm/
+
+   * packages/apps/AudioFX/
+
+   * packages/apps/Bluetooth/
+
+   * packages/apps/Camera2/
+
+   * packages/apps/CellBroadcastReceiver/
+
+   * packages/apps/CertInstaller/
+
+   * packages/apps/DocumentsUI/
+
+   * packages/apps/Eleven/
+
+   * packages/apps/Email/
+
+   * packages/apps/EmergencyInfo/
+
+   * packages/apps/ExactCalculator/
+
+   * packages/apps/FMRadio/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/HTMLViewer/
+
+   * packages/apps/Jelly/
+
+   * packages/apps/KeyChain/
+
+   * packages/apps/LockClock/
+
+   * packages/apps/ManagedProvisioning/
+
+   * packages/apps/Nfc/
+
+   * packages/apps/PackageInstaller/
+
+   * packages/apps/PhoneCommon/
+
+   * packages/apps/Profiles/
+
+   * packages/apps/Recorder/
+
+   * packages/apps/SafetyRegulatoryInfo/
+
+   * packages/apps/Snap/
+
+   * packages/apps/Stk/
+
+   * packages/apps/StorageManager/
+
+   * packages/apps/Tag/
+
+   * packages/apps/Terminal/
+
+   * packages/apps/TvSettings/
+
+   * packages/apps/UnifiedEmail/
+
+   * packages/inputmethods/LatinIME/
+
+   * packages/providers/BlockedNumberProvider/
+
+   * packages/providers/BookmarkProvider/
+
+   * packages/providers/CalendarProvider/
+
+   * packages/providers/CallLogProvider/
+
+   * packages/providers/ContactsProvider/
+
+   * packages/providers/DownloadProvider/
+
+   * packages/providers/MediaProvider/
+
+   * packages/providers/TelephonyProvider/
+
+   * packages/providers/TvProvider/
+
+   * packages/providers/UserDictionaryProvider/
+
+   * packages/providers/WeatherProvider/
+
+   * packages/screensavers/Basic/
+
+   * packages/screensavers/PhotoTable/
+
+   * packages/services/BuiltInPrintService/
+
+   * packages/services/Mms/
+
+   * packages/wallpapers/LivePicker/
+
+====================
+     11-05-2018
+====================
+
+
+====================
+     11-04-2018
+====================
+
+
+====================
+     11-03-2018
+====================
+
+
+====================
+     11-02-2018
+====================
+
+
+====================
+     11-01-2018
+====================
+
+
+====================
+     10-31-2018
+====================
+
+
+====================
+     10-30-2018
+====================
+
+
+====================
+     10-29-2018
+====================
+
+
+====================
+     10-28-2018
+====================
+
+
+====================
+     10-27-2018
+====================
+
+
+====================
+     10-26-2018
+====================
+
+
+====================
+     10-25-2018
+====================
+
+
+====================
+     10-24-2018
+====================
+
+
+====================
+     10-23-2018
+====================
+
+
+====================
+     10-22-2018
+====================
+
+
+   * hardware/qcom/display-caf/msm8996/
+89e68b2 libdisplayconfig: Depend on vendor.display.config@1.0_vendor
+
+   * hardware/qcom/display-caf/msm8998/
+9733616 libdisplayconfig: Depend on vendor.display.config@1.0_vendor
+
+   * hardware/qcom/display-caf/sdm845/
+442acf5 libdisplayconfig: Depend on vendor.display.config@1.0_vendor
+
+====================
+     10-21-2018
+====================
+
+
+====================
+     10-20-2018
+====================
+
+
+   * bootable/recovery/
+2b34c60 recovery: Move bldrmsg offset symbols to bootloader_message.cpp
+
+====================
+     10-19-2018
+====================
+
+
+====================
+     10-18-2018
+====================
+
+
+   * hardware/qcom/power/
+9a01a5c power-8084: Revert POWER_HINT_LAUNCH handling
+
+   * packages/apps/Eleven/
+2d479e0 Eleven: Fix crash after receiving media button intent
+
+====================
+     10-17-2018
+====================
+
+
+====================
+     10-16-2018
+====================
+
+   * android/
+4906a6f Merge pull request #122 from bidaian/patch-1
+61bfab0 Fixed link to documentation about porting aosp from source
+
+   * hardware/qcom/display-caf/msm8960/
+04621e3 display: Fix binder parcel position
+21beaac memtrack: Make memtrack HAL compatible for HIDL passthrough mode.
+
+====================
+     10-15-2018
+====================
+
+
+====================
+     10-14-2018
+====================
+
+
+   * packages/apps/Bluetooth/
+
+   * packages/apps/Camera2/
+
+   * packages/apps/CellBroadcastReceiver/
+
+   * packages/apps/CertInstaller/
+
+   * packages/apps/DocumentsUI/
+
+   * packages/apps/Eleven/
+
+   * packages/apps/Email/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/Jelly/
+
+   * packages/apps/KeyChain/
+
+   * packages/apps/LockClock/
+
+   * packages/apps/ManagedProvisioning/
+
+   * packages/apps/Nfc/
+
+   * packages/apps/PackageInstaller/
+
+   * packages/apps/PhoneCommon/
+
+   * packages/apps/Recorder/
+
+   * packages/apps/Snap/
+
+   * packages/apps/Stk/
+
+   * packages/apps/StorageManager/
+
+   * packages/apps/Tag/
+
+   * packages/apps/TvSettings/
+
+   * packages/apps/UnifiedEmail/
+
+   * packages/inputmethods/LatinIME/
+
+   * packages/providers/BlockedNumberProvider/
+
+   * packages/providers/DownloadProvider/
+
+   * packages/providers/MediaProvider/
+
+   * packages/providers/TvProvider/
+
+   * packages/screensavers/PhotoTable/
+
+   * packages/services/BuiltInPrintService/
+
+====================
+     10-13-2018
+====================
+
+
+====================
+     10-12-2018
+====================
+
+
+====================
+     10-11-2018
+====================
+
+
+   * packages/apps/Dialer/
+6828921 Add autorecord feature
+
+====================
+     10-10-2018
+====================
+
+
+====================
+     10-09-2018
+====================
+
+
+====================
+     10-08-2018
 ====================
 
 
    * device/huawei/angler/
 a8770b8 angler: Update build fingerprint to Oct 2018 OPM7.181005.003
 
-   * kernel/huawei/angler/
-8e8efbe Merge aosp tag 'android-8.1.0_r0.111' into lineage-15.1
+   * device/lge/bullhead/
+72abb63 bullhead: Update build fingerprint to Oct 2018 OPM7.181005.003
+395a17b bullhead: Update build fingerprint to Sep 2018 OPM6.171019.030.K1
+7a6e471 Enable led pulse by default
+e1c2725 Allow HWC color transformation
 
-   * vendor/huawei/
-31ba9a9 angler: Update blobs from Oct 2018 OPM7.181005.003 factory image
-
-   * vendor/lge/
-8b6bd7c bullhead: Update blobs from Oct 2018 OPM7.181005.003 factory image
-
-====================
-     10-06-2018
-====================
-
-
-====================
-     10-05-2018
-====================
-
-
-====================
-     10-04-2018
-====================
-
-
-====================
-     10-03-2018
-====================
-
-   * android/
-7b009c0 manifest: android-8.1.0_r46 -> android-8.1.0_r47
-
-   * build/make/
-b0fc744 Merge tag 'android-8.1.0_r47' of https://android.googlesource.com/platform/build into oreo
-
-   * device/qcom/sepolicy/
-6551d3f Merge branch 'lineage-15.1' of https://github.com/LineageOS/android_device_qcom_sepolicy into oreo
+   * external/toybox/
+8276aea Android has its loop devices under "block" as Elliott says "by reason of historical accident", so fall back to check there.
 
    * frameworks/av/
-d1df3b5 Merge tag 'android-8.1.0_r47' into staging/lineage-15.1_merge-android-8.1.0_r47
+92c5097 stagefright: add changes related to high-framerates in CameraSource
 
-   * frameworks/base/
-d817dfc Merge tag 'android-8.1.0_r47' of https://android.googlesource.com/platform/frameworks/base into oreo
-
-   * kernel/lge/bullhead/
-e7ca7a4 Merge tag 'android-8.1.0_r0.112' into lineage-15.1
-
-   * packages/apps/Settings/
-97388a1 Merge tag 'android-8.1.0_r47' of https://android.googlesource.com/platform/packages/apps/Settings into oreo
-
-   * packages/providers/DownloadProvider/
-2cd14cd Merge tag 'android-8.1.0_r47' into staging/lineage-15.1_merge-android-8.1.0_r47
-
-   * system/bt/
-19dc49e Merge tag 'android-8.1.0_r47' into staging/lineage-15.1_merge-android-8.1.0_r47
-
-   * vendor/rr/
-082713d apns: NOS: fix tethering and mms.
-bccfc70 addonsu: Fix installation on Lineage recovery
-f3787ba repopick: Warn about empty commits instead of failing
-afd2508 RR: bump version to 6.2.1
-
-====================
-     10-02-2018
-====================
-
-
-====================
-     10-01-2018
-====================
-
-
-====================
-     09-30-2018
-====================
-
-
-====================
-     09-29-2018
-====================
-
-
-   * vendor/oneplus/
-75c9ebf oneplus2: Hex-edit netmgrd to workaround invalid address crash
-648c64c oneplus2: add qti_libpermissions.xml from mata
-
-====================
-     09-28-2018
-====================
-
-
-====================
-     09-27-2018
-====================
-
-
-====================
-     09-26-2018
-====================
-
-
-====================
-     09-25-2018
-====================
-
-
-   * frameworks/opt/telephony/
-fae20cc Support Fetching IMSI MCC and MNC for RuimRecords.
-5a83055 Fix SIM refresh issue
-904304a Clean up Icc Refresh handling
-
-====================
-     09-24-2018
-====================
-
-
-   * device/qcom/sepolicy/
-710d097 allow mm-qcamerad to use platform_app fd
-
-   * packages/apps/CellBroadcastReceiver/
-562ec24 Handle database version update form 12 to 11
-ed9f7ac Add area update info support for mcc405
-
-====================
-     09-23-2018
-====================
-
-
-====================
-     09-22-2018
-====================
-
-
-====================
-     09-21-2018
-====================
-
-
-====================
-     09-20-2018
-====================
-
-
-   * frameworks/base/
-74c94d9 PackageManager: Avoid another NPE when dereferencing mPlatfromPackage
-
-====================
-     09-19-2018
-====================
-
-
-====================
-     09-18-2018
-====================
-
-
-====================
-     09-17-2018
-====================
-
-
-====================
-     09-16-2018
-====================
-
-
-====================
-     09-15-2018
-====================
-
-
-====================
-     09-14-2018
-====================
-
-
-====================
-     09-13-2018
-====================
-
-
-   * packages/apps/Camera2/
-5782299 Camera2: Request for ACCESS_FINE_LOCATION permission
-
-====================
-     09-12-2018
-====================
-
-
-====================
-     09-11-2018
-====================
-
-
-   * device/lge/bullhead/
-34b6848 Merge remote-tracking branch 'aicp/o8.1' into test
-
-   * vendor/rr/
-60e0fa6 kernel: Set CROSS_COMPILE_ARM32 if using aarch64
+   * system/extras/su/
+bffcdef su: Fully rebrand
 
